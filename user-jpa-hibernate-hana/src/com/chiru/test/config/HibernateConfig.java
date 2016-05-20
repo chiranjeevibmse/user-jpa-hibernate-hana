@@ -15,7 +15,7 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@EnableJpaRepositories(basePackages={"com.chiru.test.hijpa"})
+@EnableJpaRepositories(basePackages={"com.chiru.test.user"})
 @EnableTransactionManagement
 public class HibernateConfig {
 	 
@@ -42,7 +42,7 @@ public class HibernateConfig {
 		entityManagerFactoryBean.setDataSource(this.getDataSource());
 		entityManagerFactoryBean
 				.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
-		entityManagerFactoryBean.setPackagesToScan("com.chiru.test.hijpa");
+		entityManagerFactoryBean.setPackagesToScan("com.chiru.test.user");
 
 		entityManagerFactoryBean.setJpaProperties(this.hibProperties());
 
