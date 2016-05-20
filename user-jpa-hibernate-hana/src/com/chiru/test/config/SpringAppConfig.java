@@ -10,7 +10,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan("com.saartha")
+@ComponentScan("com.chiru")
 @Import(HibernateConfig.class)
 public class SpringAppConfig {
 	 @Bean  
