@@ -1,4 +1,4 @@
-package com.saartha.test.config;
+package com.chiru.test.config;
 
 import java.util.Properties;
 
@@ -15,7 +15,7 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@EnableJpaRepositories(basePackages={"com.saartha.test.hijpa"})
+@EnableJpaRepositories(basePackages={"com.chiru.test.hijpa"})
 @EnableTransactionManagement
 public class HibernateConfig {
 	 
@@ -42,7 +42,7 @@ public class HibernateConfig {
 		entityManagerFactoryBean.setDataSource(this.getDataSource());
 		entityManagerFactoryBean
 				.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
-		entityManagerFactoryBean.setPackagesToScan("com.saartha.test.hijpa");
+		entityManagerFactoryBean.setPackagesToScan("com.chiru.test.hijpa");
 
 		entityManagerFactoryBean.setJpaProperties(this.hibProperties());
 

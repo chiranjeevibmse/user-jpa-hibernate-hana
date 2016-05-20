@@ -3,7 +3,7 @@
  * Saartha Labs PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
  *
  */
-package com.saartha.test.config;
+package com.chiru.test.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
